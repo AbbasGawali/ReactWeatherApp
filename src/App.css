@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+    /* border: 1px solid red; */
+}
+
+.container {
+    background-image: url(./img/bg1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    text-align: center;
+    bottom: 2rem;
+    position: absolute;
+    /* border: 1px solid burlywood; */
+    width: 100%;
+
+}
+
+
+.mainContainer {
+    /* background-image: url(./img/bg2.jpg); */
+    /* border: 3px solid red; */
+    width: 100%;
+    min-height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.weatherInfo {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    width: 75%;
+    height: 100%;
+    /* border: 1px solid greenyellow; */
+    background: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)), url(./img/city.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.info1 {
+    /* width: 60vw; */
+    height: 100%;
+
+    /* border: 1px solid green; */
+}
+
+.info2 {
+    /* border: 1px solid red; */
+    background-color: rgba(0, 0, 0, 0.797);
+    height: 100%;
+    /* width: 40vw; */
+}
+
+.city {
+    text-align: end;
+    padding: 1rem;
+}
+
+.city h3 {
+    text-transform: capitalize;
+}
+
+.city h4 {
+    text-transform: uppercase;
+}
+
+.cityTimeinfo {
+    /* position: relative; */
+}
+
+.cityData {
+    position: absolute;
+    bottom: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cityData .c2 {
+    padding: 0 2rem;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+
+.climate {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.searchCity {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.searchBar {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 1rem;
+}
+
+.searchCity button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    /* color: #000; */
+
+}
+
+.citys {
+    text-align: center;
+}
+
+.intdet {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.lineUp {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    /* border-bottom: 1px solid #989898; */
+    width: 80%;
+    height: 1px;
+    background-color: rgb(97, 97, 97);
+
+}
+
+
+.weatherLogo {
+    text-align: center;
+    padding: 1rem;
+}
+
+.weatherLogo svg {
+    font-size: 80px;
+}
+
+
+
+
+
+
+@media screen and (max-width:840px) {
+    .cityTimeinfo {
+        text-align: center;
+    }
+
+    .cityData {
+        position: relative;
+        top: 6rem;
+        width: 100%;
+        /* border: 5px solid oldlace; */
+        flex-direction: column;
+        /* margin: 1rem ; */
+    }
+}
+
+@media screen and (max-width:660px) {
+    .weatherInfo {
+        width: 95%;
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .weatherInfo {
+        grid-template-columns: 1fr;
+        width: 75%;
+    }
+
+    .cityData {
+        border: none;
+        position: initial;
+
+
+    }
+
+    .c1 h3 {
+        margin: 0.4rem 0;
+    }
+
+    .container {
+        min-height: 130vh;
+    }
+
+    .weatherInfo {
+        width: 100%;
+    }
+
+    .footer {
+        bottom: -8rem;
+    }
+}
+
+@media screen and (max-width:290px) {
+    .info2 {
+        width: 98vw;
+    }
+
+    .mainContainer {
+        margin-top: 4rem;
+    }
+
+    .footer {
+        bottom: -10rem;
+    }
+
+
+}
